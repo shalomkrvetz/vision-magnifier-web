@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Vision Aid Pro</title>
+    <link rel="manifest" href="/vision-magnifier-web/assets/manifest-Co_VBlY4.json" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3616/3616927.png" />
+    <style>
+      /* Strict reset to ensure fixed viewport behavior */
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Disable browser scrolling */
+        overscroll-behavior: none; /* Prevent rubber-banding */
+      }
+      #root {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      /* Custom scrollbar for controls if they overflow internally */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #18181b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #52525b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #71717a;
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "peerjs": "https://aistudiocdn.com/peerjs@^1.5.5",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/vision-magnifier-web/assets/index-CAbLQGZO.js"></script>
+  <link rel="stylesheet" crossorigin href="/vision-magnifier-web/assets/index-UTCsHWQ5.css">
+</head>
+  <body class="bg-black text-white touch-none">
+    <div id="root"></div>
+</body>
+</html>
